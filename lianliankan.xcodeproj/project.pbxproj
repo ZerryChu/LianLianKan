@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B284E4CC15D4A28200A077F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B284E4CB15D4A28200A077F5 /* main.cpp */; };
 		B284E4CE15D4A28200A077F5 /* lianliankan.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B284E4CD15D4A28200A077F5 /* lianliankan.1 */; };
+		B287598515DE57D900855554 /* ecs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B287598015DE57D900855554 /* ecs.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B284E4C715D4A28200A077F5 /* lianliankan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lianliankan; sourceTree = BUILT_PRODUCTS_DIR; };
 		B284E4CB15D4A28200A077F5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B284E4CD15D4A28200A077F5 /* lianliankan.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = lianliankan.1; sourceTree = "<group>"; };
+		B287597F15DE552100855554 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		B287598015DE57D900855554 /* ecs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ecs.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +63,9 @@
 		B284E4CA15D4A28200A077F5 /* lianliankan */ = {
 			isa = PBXGroup;
 			children = (
+				B287598015DE57D900855554 /* ecs.cpp */,
 				B284E4CB15D4A28200A077F5 /* main.cpp */,
+				B287597F15DE552100855554 /* Tree.h */,
 				B284E4CD15D4A28200A077F5 /* lianliankan.1 */,
 			);
 			path = lianliankan;
@@ -117,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B284E4CC15D4A28200A077F5 /* main.cpp in Sources */,
+				B287598515DE57D900855554 /* ecs.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +177,8 @@
 		B284E4D215D4A28200A077F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_INPUT_FILETYPE = automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -178,6 +186,8 @@
 		B284E4D315D4A28200A077F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_INPUT_FILETYPE = automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -201,6 +211,7 @@
 				B284E4D315D4A28200A077F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

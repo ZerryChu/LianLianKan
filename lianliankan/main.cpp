@@ -7,6 +7,10 @@
 //
 
 #include <iostream>
+#include <stdlib.h>
+#include "Tree.h"
+
+using namespace std;
 #define ROW 6
 #define LINE 9
 
@@ -186,7 +190,7 @@ bool Link2Point2CornerInArray(int (*arr)[LINE], int row, int line, Point p1, Poi
     return false;
 }
 
-int main(int argc, const char * argv[])
+int main1(int argc, const char * argv[])
 {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -224,6 +228,27 @@ int main(int argc, const char * argv[])
             Link2Point2CornerInArray(testArr, ROW, LINE, p1, p2, pList2);
         }
     }
+    
+    return 0;
+}
+
+int main(int argc, const char * argv[])
+{
+    //测试树
+    cout<<"开始测试树\n";
+    Tree<char> t;
+    t.InsertChild('A');
+    for (int  i = 0; i < 3; i ++) {
+        t.Root();
+        t.InsertChild('B'+i);
+    }
+    for (int i = 0; i < 2; i++) {
+        t.Root();
+        t.FirstChild();
+        t.InsertChild('E'+i);
+    }
+    
+    t.DisplayTree();
     
     return 0;
 }
